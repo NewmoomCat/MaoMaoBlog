@@ -1,0 +1,40 @@
+h1 {
+    font-size: 300%;
+}
+
+.p_size {
+    font-size: 180%;
+    margin: 5px 0;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(135deg, #55FFFF, #FFFFFF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #55FFFF, #00AAAA);
+    color: #FFE;
+    font-size: 18px; /* 像素 */
+    font-weight: bolder;
+    padding: 65px, 17px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 8px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #44DDDD, #008888);
+    transform: scale(1.01);
+}

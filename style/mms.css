@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(135deg, #55FFFF, #FFFFFF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
