@@ -24,15 +24,17 @@ body {
 }
 
 .button {
-    display: inline-block;
+    display: block;
+    width: 80%;
+    text-align: center;
+    padding: 16px 0;
     background: linear-gradient(135deg, #55FFFF, #00AAAA);
     color: #FFE;
-    font-size: 18px; /* 像素 */
+    font-size: 18px;
     font-weight: bolder;
-    padding: 65px, 17px;
     border-radius: 7px;
     text-decoration: none;
-    margin: 8px 10px;
+    margin: 8px auto;
     cursor: pointer;
 }
 
@@ -49,34 +51,34 @@ body {
     border-radius: 12px;
     border: 2px solid #1E1E2E;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    text-align: left;      /* 框内整体左对齐 */
-    margin-bottom: 25px;   /* 和按钮保持距离 */
+    text-align: left;
+    margin-bottom: 25px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-/* 框内的标题（居中） */
 .terminal-title {
     color: #CDD6F4;
     font-size: 24px;
-    text-align: center;    /* 👈 居中 */
+    text-align: center;
     margin: 0 0 15px 0;
     padding-bottom: 10px;
-    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+    border-bottom: 1px dashed #CDD6F4;
 }
 
 .terminal-title-l {
     color: #CDD6F4;
     font-size: 24px;
-    text-align: left;    /* 👈 居中 */
+    text-align: left;
     margin: 0 0 15px 0;
     padding-bottom: 10px;
-    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+    border-bottom: 1px dashed #CDD6F4;
 }
 
-/* 框内的段落（左对齐） */
 .terminal-box p {
     margin: 12px 0;
     font-size: clamp(14px, 2.5vw, 18px);
-    text-align: left;      /* 👈 左对齐 */
+    text-align: left;
 }
 
 .p_size {
@@ -91,37 +93,33 @@ body {
 
 .top-title {
     position: fixed;
-    top: 0;                  /* 紧贴顶部 */
-    left: 50%;               /* 从左边开始50%位置 */
-    transform: translateX(-50%); /* 往左挪自身宽度的一半，实现完美居中 */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: clamp(28px, 5vw, 48px);
     padding: 15px 30px;
     width: 100%;
     text-align: center;
-    z-index: 100;            /* 确保在其他元素上面 */
+    z-index: 100;
     margin: 0;
 }
 
 @font-face {
     font-family: "JetBrains Mono Nerd";
     src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2") format("woff2");
-    font-display: swap; /* 优化加载体验 */
+    font-display: swap;
 }
 
-/* ===== 手机端适配（屏幕宽度小于 768px） ===== */
 @media (max-width: 768px) {
-    /* 容器内边距缩小 */
     .container {
         padding: 10px;
     }
 
-    /* 终端框内边距缩小 */
     .terminal-box {
         padding: 15px 20px;
         border-radius: 8px;
     }
 
-    /* 标题字号缩小 */
     .top-title {
         font-size: 32px;
     }
@@ -130,28 +128,25 @@ body {
         font-size: 20px;
     }
 
-    /* 按钮变成块级元素，上下排列并占满宽度 */
     .button {
-        display: block;          /* 变成块级元素，独占一行 */
-        width: 100%;            /* 占满容器宽度 */
-        margin: 8px 0;          /* 上下间距，左右为0 */
+        display: block;
+        width: 100%;
+        margin: 8px 0;
         text-align: center;
-        padding: 16px 0;        /* 上下内边距大一点，方便手指点击 */
+        padding: 16px 0;
     }
 
     .button-group {
         display: flex;
-        flex-direction: column; /* 按钮竖着排 */
-        gap: 10px;              /* 按钮间距 */
+        flex-direction: column;
+        gap: 10px;
         width: 100%;
     }
 
-    /* 分隔线宽度拉满 */
     .divider {
         width: 100%;
     }
 
-    /* 卡片内的段落，增加行高和间距，方便阅读 */
     .terminal-box p {
         font-size: 16px;
         line-height: 1.8;
@@ -160,11 +155,11 @@ body {
 }
 
 .footer {
-    margin-top: 60px;          /* 和上面的内容保持距离 */
-    font-size: 14px;           /* 小字 */
-    color: #0938f3;            /* Catppuccin 的柔和灰色，你可以改成任何喜欢的颜色 */
-    text-align: center;        /* 居中 */
-    opacity: 0.7;              /* 稍微透明一点，更低调 */
+    margin-top: 60px;
+    font-size: 14px;
+    color: #0938f3;
+    text-align: center;
+    opacity: 0.7;
     font-family: inherit;
 }
 

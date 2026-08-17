@@ -23,7 +23,7 @@
             }
             ?>
         </div>
-        <a href="index.php", class="button">返回上一页</a>
+        <a href="index.php", class="button">返回主页</a>
         <a href="https://qm.qq.com/q/HBv5WcpGk8", class="button">加入QQ群</a>
         <!-- <a href="minecraft://?addExternalServer=服务器名称|服务器地址:端口">test</a> -->
          <div class="footer">
