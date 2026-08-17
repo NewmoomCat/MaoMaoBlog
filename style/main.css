@@ -160,7 +160,7 @@ body {
 }
 
 .footer {
-    margin-top: 30px;          /* 和上面的内容保持距离 */
+    margin-top: 60px;          /* 和上面的内容保持距离 */
     font-size: 14px;           /* 小字 */
     color: #0938f3;            /* Catppuccin 的柔和灰色，你可以改成任何喜欢的颜色 */
     text-align: center;        /* 居中 */
