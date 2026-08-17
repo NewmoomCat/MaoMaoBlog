@@ -16,6 +16,9 @@
         ?>
         <a href='mms.php', class='button'>MaoMaoPE</a><!-- 跳转到猫猫服务器的页面  -->
         <a href='me.php', class='button'>猫猫的介绍页</a><br><!-- 跳转到猫猫的介绍页 -->
+        <div class="footer">
+                &copy; 2026 XinYueNeko
+        </div>
     </div>
 </body>
 </html>

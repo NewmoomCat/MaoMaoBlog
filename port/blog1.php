@@ -31,6 +31,9 @@
         </div>
         <br><a href="../me.php", class="button">返回上一页</a>
         <a href="../index.php", class="button">返回主页</a>
+        <div class="footer">
+            &copy; 2026 XinYueNeko
+        </div>
     </div>
 </body>
 </html>
