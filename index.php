@@ -10,9 +10,15 @@
     <div class="container">
         <h1>PHP写的网站</h1>
         <?php
-            echo "<p class='p_size'>\"新月猫Neko\"的纯PHP Website</p><br>";
-            echo "<p class='p_size'>下面是一些链接</p><br>"; # 我很懒，我连介绍都懒得写
-        # 我是懒狗
+            //echo "<p class='p_size'>\"新月猫Neko\"的纯PHP Website</p><br>";
+            //echo "<p class='p_size'>下面是一些链接</p><br>"; # 我很懒，我连介绍都懒得写
+            $texts = [
+                "\"新月猫Neko\"的纯PHP Website",
+                "下面是一些链接"
+            ];
+            foreach($texts as $txt) {
+                echo "<p class='p_size'>$txt</p>";
+            }        
         ?>
         <a href='mms.php', class='button'>MaoMaoPE</a><!-- 跳转到猫猫服务器的页面  -->
         <a href='me.php', class='button'>猫猫的介绍页</a><br><!-- 跳转到猫猫的介绍页 -->
