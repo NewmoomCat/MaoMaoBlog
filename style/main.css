@@ -75,7 +75,7 @@ body {
 /* 框内的段落（左对齐） */
 .terminal-box p {
     margin: 12px 0;
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 18px);
     text-align: left;      /* 👈 左对齐 */
 }
 
@@ -106,4 +106,55 @@ body {
     font-family: "JetBrains Mono Nerd";
     src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2") format("woff2");
     font-display: swap; /* 优化加载体验 */
+}
+
+/* ===== 手机端适配（屏幕宽度小于 768px） ===== */
+@media (max-width: 768px) {
+    /* 容器内边距缩小 */
+    .container {
+        padding: 10px;
+    }
+
+    /* 终端框内边距缩小 */
+    .terminal-box {
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+
+    /* 标题字号缩小 */
+    .top-title {
+        font-size: 32px;
+    }
+
+    .terminal-title {
+        font-size: 20px;
+    }
+
+    /* 按钮变成块级元素，上下排列并占满宽度 */
+    .button {
+        display: block;          /* 变成块级元素，独占一行 */
+        width: 100%;            /* 占满容器宽度 */
+        margin: 8px 0;          /* 上下间距，左右为0 */
+        text-align: center;
+        padding: 16px 0;        /* 上下内边距大一点，方便手指点击 */
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column; /* 按钮竖着排 */
+        gap: 10px;              /* 按钮间距 */
+        width: 100%;
+    }
+
+    /* 分隔线宽度拉满 */
+    .divider {
+        width: 100%;
+    }
+
+    /* 卡片内的段落，增加行高和间距，方便阅读 */
+    .terminal-box p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 10px 0;
+    }
 }
