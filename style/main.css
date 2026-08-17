@@ -90,6 +90,19 @@ body {
     text-decoration: none;
 }
 
+.top-title {
+    position: fixed;
+    top: 0;                  /* 紧贴顶部 */
+    left: 50%;               /* 从左边开始50%位置 */
+    transform: translateX(-50%); /* 往左挪自身宽度的一半，实现完美居中 */
+    font-size: 48px;
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;            /* 确保在其他元素上面 */
+    margin: 0;
+}
+
 @font-face {
     font-family: "JetBrains Mono Nerd";
     src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2") format("woff2");

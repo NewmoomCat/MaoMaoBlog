@@ -19,7 +19,7 @@
                 echo "<a href='https://x.com/XinYue_Neko', class='t-link'>X(Twitter)</a><br>";
                 echo "<a href='https://www.facebook.com/profile.php?id=61585334816423', class='t-link'>Facebook</a><br>";
                 echo "<p class='p_size'>博客内容: </p><br>";
-                echo "<a href='port/blog1.php', class='t-link'>0.9.0 ~ 1.1.7版本的各相协议</a>";
+                echo "<p class='p_size'>1·<a href='port/blog1.php', class='t-link'>0.9.0 ~ 1.1.7版本的各相协议</a></p>";
             ?>
         </div>
         <a href="index.php", class="button">返回上一页</a>
