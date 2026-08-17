@@ -4,14 +4,20 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>猫猫的介绍页</title>
-    <link rel='stylesheet' href='style/me.css'>
+    <link rel='stylesheet' href='style/main.css'>
 </head>
 <body>
     <div>
-        <h1 class="top-title">新月猫Neko</h1>
-        <?php
-        echo "<p class='p_size'>滚木</p><br>";
-        ?>
+        <div class="terminal-box">
+            <h1 class="terminal-title">新月猫Neko</h1>
+            <?php
+                echo "<p class='p_size'>一个普普通通的学生</p>";
+                echo "<p class='p_size'>已经上高中了</p>";
+                echo "<p class='p_size'>正在学习<a href='https://www.php.net', class='t-link'>PHP</a>,<a href='https://www.java.com', class='t-link'>Java</a></p><br><br>";
+                echo "<p class='p_size'>博客内容: </p><br>";
+                echo "<a href='port/blog1.php', class='t-link'>0.9.0 ~ 1.1.7版本的各相协议</a>";
+            ?>
+        </div>
         <a href="index.php", class="button">返回上一页</a>
     </div>
 </body>

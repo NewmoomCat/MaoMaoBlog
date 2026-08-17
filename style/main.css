@@ -10,6 +10,7 @@ h1 {
 
 body {
     background: linear-gradient(135deg, #55FFFF, #FFFFFF);
+    font-family: 'JetBrains Mono Nerd Font', monospace;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,4 +38,59 @@ body {
 .button:hover {
     background: linear-gradient(135deg, #44DDDD, #008888);
     transform: scale(1.01);
+}
+
+.terminal-box {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+    font-family: 'JetBrains Mono Nerd Font', monospace;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 2px solid #1E1E2E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: left;      /* 框内整体左对齐 */
+    margin-bottom: 25px;   /* 和按钮保持距离 */
+}
+
+/* 框内的标题（居中） */
+.terminal-title {
+    color: #CDD6F4;
+    font-size: 24px;
+    text-align: center;    /* 👈 居中 */
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+}
+
+.terminal-title-l {
+    color: #CDD6F4;
+    font-size: 24px;
+    text-align: left;    /* 👈 居中 */
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+}
+
+/* 框内的段落（左对齐） */
+.terminal-box p {
+    margin: 12px 0;
+    line-height: 0.7;
+    font-size: 16px;
+    text-align: left;      /* 👈 左对齐 */
+}
+
+.p_size {
+    font-size: 180%;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.t-link {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "JetBrains Mono Nerd";
+    src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2") format("woff2");
+    font-display: swap; /* 优化加载体验 */
 }
