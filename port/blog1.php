@@ -47,6 +47,7 @@
                 echo "<p class='p_size'>{$protocols[$i]} | {$protocols2[$i]}</p>";
             }
             ?>
+            <p class="p_size">以上协议版本仅列出正式版协议，测试版均未列出</p>
         </div>
         <br><a href="../me.php", class="button">返回上一页</a>
         <a href="../index.php", class="button">返回主页</a>
