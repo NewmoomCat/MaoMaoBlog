@@ -14,6 +14,10 @@
                 echo "<p class='p_size'>一个普普通通的学生</p>";
                 echo "<p class='p_size'>已经上高中了</p>";
                 echo "<p class='p_size'>正在学习<a href='https://www.php.net', class='t-link'>PHP</a>,<a href='https://www.java.com', class='t-link'>Java</a></p><br><br>";
+                echo "<p class='p_size'>其他链接: </p>";
+                echo "<a href='https://space.bilibili.com/562830332', class='t-link'>BiliBili</a><br>";
+                echo "<a href='https://x.com/XinYue_Neko', class='t-link'>X(Twitter)</a><br>";
+                echo "<a href='https://www.facebook.com/profile.php?id=61585334816423', class='t-link'>Facebook</a><br>";
                 echo "<p class='p_size'>博客内容: </p><br>";
                 echo "<a href='port/blog1.php', class='t-link'>0.9.0 ~ 1.1.7版本的各相协议</a>";
             ?>
