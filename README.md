@@ -6,3 +6,5 @@ MaoMao Blog
 用的是原生PHP (非Next.js, vue.js和ThinkPHP等一系列框架)
 
 如果网站有什么问题的话可以提交Issue
+
+(一个写的很静态的动态博客)
